@@ -19,14 +19,14 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-            Discover the{" "}
+            Discover the ministries of{" "}
             <span className="text-primary relative">
-              Light
+              Mount Calvary COGIC
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
                 <path d="M2 10C50 4 150 4 198 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" className="text-primary/40"/>
               </svg>
             </span>{" "}
-            of God's Word
+            in São Paulo, Brazil
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
