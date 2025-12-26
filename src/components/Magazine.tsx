@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
-
 const Magazine = () => {
-  return (
-    <section id="magazine" className="py-24 bg-background relative overflow-hidden">
+  return <section id="magazine" className="py-24 bg-background relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/20 to-transparent" />
@@ -14,29 +12,31 @@ const Magazine = () => {
           <div className="space-y-8">
             <div>
               <span className="text-primary font-medium tracking-wider uppercase text-sm">Digital Magazine</span>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-                Faith & Life<br />
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4 mb-6">Legacy Ministry
+Magazine<br />
                 <span className="text-primary">Monthly Magazine</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Our digital magazine brings you inspiring testimonies, biblical teachings, 
-                family devotionals, and practical wisdom for living out your faith every month.
-              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">Our digital magazine brings you inspiring testimonies, biblical teachings, and an opportunity for you to sow into Mount Calvary's new se</p>
             </div>
 
             {/* Features */}
             <div className="space-y-4">
-              {[
-                { icon: "📖", text: "In-depth Bible studies and devotionals" },
-                { icon: "✨", text: "Inspiring testimonies from believers worldwide" },
-                { icon: "👨‍👩‍👧‍👦", text: "Family-focused articles and activities" },
-                { icon: "🎯", text: "Practical faith applications for daily life" },
-              ].map((feature, index) => (
-                <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-border/50">
+              {[{
+              icon: "📖",
+              text: "In-depth Bible studies and devotionals"
+            }, {
+              icon: "✨",
+              text: "Inspiring testimonies from believers worldwide"
+            }, {
+              icon: "👨‍👩‍👧‍👦",
+              text: "Family-focused articles and activities"
+            }, {
+              icon: "🎯",
+              text: "Practical faith applications for daily life"
+            }].map((feature, index) => <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-border/50">
                   <span className="text-2xl">{feature.icon}</span>
                   <span className="text-foreground font-medium">{feature.text}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             {/* CTA */}
@@ -80,8 +80,6 @@ const Magazine = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Magazine;
