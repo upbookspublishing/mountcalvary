@@ -43,17 +43,13 @@ const Hero = () => {
         {/* Featured Video */}
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 border border-border/50 bg-card">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10 flex items-center justify-center">
-              <div className="w-20 h-20 md:w-24 md:h-24 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/30">
-                <svg className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-foreground/80 to-transparent">
-              <p className="text-primary-foreground font-display text-xl md:text-2xl font-semibold">A Message of Hope</p>
-              <p className="text-primary-foreground/80 text-sm mt-1">Watch our featured video and be inspired</p>
-            </div>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/vN7_o21yfYI"
+              title="Mount Calvary COGIC Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </div>
