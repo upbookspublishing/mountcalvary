@@ -44,10 +44,7 @@ Magazine<br />
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="text-lg px-8">
-                Subscribe Free
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8">
-                Preview Latest Issue
+                Subscribe now
               </Button>
             </div>
           </div>
