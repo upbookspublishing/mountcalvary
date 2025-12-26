@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import magazineCover from "@/assets/magazine-cover.jpeg";
+
 const Magazine = () => {
   return <section id="magazine" className="py-24 bg-background relative overflow-hidden">
       {/* Decorative background */}
@@ -54,23 +56,12 @@ Magazine<br />
           <div className="relative">
             <div className="relative mx-auto max-w-md">
               {/* Main Magazine */}
-              <div className="relative z-20 aspect-[3/4] rounded-2xl bg-gradient-to-br from-primary via-primary/90 to-primary/80 shadow-2xl shadow-primary/30 overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="absolute inset-0 p-8 flex flex-col justify-between text-primary-foreground">
-                  <div>
-                    <p className="text-sm font-medium opacity-80 tracking-wider">DECEMBER 2024</p>
-                    <h3 className="font-display text-3xl font-bold mt-2">Faith & Life</h3>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="w-full h-px bg-primary-foreground/30" />
-                    <p className="text-xl font-display font-semibold">The Gift of Christmas</p>
-                    <p className="text-sm opacity-80">Finding hope and joy in the season of giving</p>
-                    <div className="flex gap-2 flex-wrap">
-                      <span className="px-3 py-1 bg-primary-foreground/20 rounded-full text-xs">Devotionals</span>
-                      <span className="px-3 py-1 bg-primary-foreground/20 rounded-full text-xs">Family</span>
-                      <span className="px-3 py-1 bg-primary-foreground/20 rounded-full text-xs">Testimonies</span>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative z-20 aspect-[3/4] rounded-2xl shadow-2xl shadow-primary/30 overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <img 
+                  src={magazineCover} 
+                  alt="Legacy Ministry Magazine Cover" 
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Background Magazines */}
