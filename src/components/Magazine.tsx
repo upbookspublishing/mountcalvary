@@ -14,7 +14,7 @@ const Magazine = () => {
               <span className="text-primary font-medium tracking-wider uppercase text-sm">Digital Magazine</span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4 mb-6">Legacy Ministry
 Magazine<br />
-                <span className="text-primary">Monthly Magazine</span>
+                <span className="text-primary">Our digital magazine brings you inspiring testimonies, biblical teachings, and an opportunity for you to sow into Mount Calvary's new season</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">Our digital magazine brings you inspiring testimonies, biblical teachings, and an opportunity for you to sow into Mount Calvary's new se</p>
             </div>
