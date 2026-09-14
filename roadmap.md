@@ -1,0 +1,4 @@
+- [ ] Recreate the homepage in the attached navy-and-gold editorial campaign direction.
+- [ ] Add a dedicated welcome video section directly below the hero.
+- [ ] Preserve the existing book and magazine cover content.
+- [ ] Verify desktop and mobile rendering and resolve any errors.

@@ -15,12 +15,12 @@ export default {
   	extend: {
   		fontFamily: {
   			display: [
-  				'Playfair Display',
+				'Libre Baskerville',
   				'Georgia',
   				'serif'
   			],
   			body: [
-  				'Source Sans 3',
+				'IBM Plex Sans',
   				'system-ui',
   				'sans-serif'
   			],
