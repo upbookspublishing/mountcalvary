@@ -2,48 +2,42 @@ import { Button } from "@/components/ui/button";
 import magazineCover from "@/assets/magazine-cover.jpeg";
 
 const Magazine = () => {
-  return <section id="magazine" className="py-24 bg-background relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/20 to-transparent" />
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10">
+  return <section id="magazine" className="relative overflow-hidden bg-secondary py-20 text-secondary-foreground md:py-28">
+      <div className="container relative z-10 mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <span className="text-primary font-medium tracking-wider uppercase text-sm">Digital Magazine</span>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4 mb-6">Legacy Ministry
-Magazine<br />
-                <span className="text-primary">Our digital magazine brings you inspiring testimonies, biblical teachings, and an opportunity for you to sow into Mount Calvary's new season</span>
+              <span className="eyebrow text-primary">Digital Magazine</span>
+              <h2 className="mt-4 font-display text-4xl leading-tight md:text-6xl">Legacy Ministry Magazine<br />
+                <span className="text-primary">Stories of faith. A vision for tomorrow.</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">Our digital magazine brings you inspiring testimonies, biblical teachings, and an opportunity for you to sow into Mount Calvary's new se</p>
+              <p className="mt-6 max-w-xl text-lg leading-8 text-secondary-foreground/70">Our digital magazine brings you inspiring testimonies, biblical teaching, and an opportunity to sow into Mount Calvary's new season.</p>
             </div>
 
             {/* Features */}
             <div className="space-y-4">
               {[{
               icon: "📖",
-              text: "In-depth Bible studies and devotionals"
+                text: "Biblical teaching and devotionals"
             }, {
               icon: "✨",
-              text: "Inspiring testimonies from believers worldwide"
+              text: "Inspiring testimonies from our community"
             }, {
               icon: "👨‍👩‍👧‍👦",
-              text: "Family-focused articles and activities"
+              text: "Stories from Mount Calvary in Brazil"
             }, {
               icon: "🎯",
-              text: "Practical faith applications for daily life"
-            }].map((feature, index) => <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-border/50">
-                  <span className="text-2xl">{feature.icon}</span>
-                  <span className="text-foreground font-medium">{feature.text}</span>
+              text: "Ways to support the ministry's next chapter"
+            }].map((feature, index) => <div key={index} className="flex items-center gap-4 border-b border-secondary-foreground/15 py-4">
+                  <span className="text-xl">{feature.icon}</span>
+                  <span className="font-medium text-secondary-foreground">{feature.text}</span>
                 </div>)}
             </div>
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="text-lg px-8">
+              <Button size="lg" className="px-8 uppercase">
                 Subscribe now
               </Button>
             </div>
@@ -53,7 +47,7 @@ Magazine<br />
           <div className="relative">
             <div className="relative mx-auto max-w-md">
               {/* Main Magazine */}
-              <div className="relative z-20 aspect-[3/4] rounded-2xl shadow-2xl shadow-primary/30 overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div className="relative z-20 aspect-[3/4] overflow-hidden border border-primary/30 shadow-2xl transition-transform duration-500 hover:-translate-y-2">
                 <img 
                   src={magazineCover} 
                   alt="Legacy Ministry Magazine Cover" 
@@ -61,9 +55,7 @@ Magazine<br />
                 />
               </div>
 
-              {/* Background Magazines */}
-              <div className="absolute top-4 -left-4 z-10 w-full aspect-[3/4] rounded-2xl bg-accent border border-border/50 transform -rotate-6" />
-              <div className="absolute top-8 -left-8 z-0 w-full aspect-[3/4] rounded-2xl bg-secondary border border-border/50 transform -rotate-12" />
+               <div className="absolute -bottom-5 -right-5 z-10 h-full w-full border border-primary/25" />
             </div>
           </div>
         </div>

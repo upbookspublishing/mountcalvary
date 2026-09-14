@@ -1,56 +1,26 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight, PlayCircle } from "lucide-react";
+import heroImage from "@/assets/mount-calvary-hero.jpg";
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-accent/30">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
-      </div>
-
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-primary">Transforming Lives Through Faith</span>
-          </div>
-
-          {/* Headline */}
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-            Discover what the Lord is doing through the ministry of{" "}
-            <span className="text-primary relative">
-              Mount Calvary COGIC
-              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                <path d="M2 10C50 4 150 4 198 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" className="text-primary/40" />
-              </svg>
-            </span>{" "}
-            in São Paulo, Brazil
+  return <section className="relative flex min-h-[92vh] items-end overflow-hidden bg-secondary pt-20 text-secondary-foreground">
+      <img src={heroImage} alt="Church in São Paulo at sunset" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover object-center" />
+      <div className="absolute inset-0 bg-hero-overlay" />
+      <div className="container relative z-10 mx-auto px-6 pb-16 pt-28 md:pb-20 md:pt-40">
+        <div className="max-w-4xl">
+          <p className="eyebrow text-primary">Faith builds generations</p>
+          <h1 className="mt-5 max-w-4xl font-display text-5xl leading-[0.96] md:text-7xl lg:text-8xl">
+            A ministry <span className="text-primary">in motion.</span>
           </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">​Be a part of what the Lord is doing through Mount Calvary                             </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button variant="default" size="lg" className="text-lg px-8">
-              Watch Now
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8">
-              Explore Resources
-            </Button>
+          <p className="mt-7 max-w-2xl font-display text-xl leading-8 text-secondary-foreground/90 md:text-2xl">
+            Discover what the Lord is doing through the ministry of Mount Calvary COGIC in São Paulo, Brazil.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <Button size="lg" asChild className="h-13 px-7 uppercase"><a href="#welcome">Watch our welcome <PlayCircle /></a></Button>
+            <Button size="lg" variant="outline" asChild className="h-13 border-secondary-foreground/60 bg-secondary/20 px-7 uppercase text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary"><a href="#books">Explore the ministry <ArrowRight /></a></Button>
           </div>
         </div>
-
-        {/* Featured Video */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 border border-border/50 bg-card">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/vN7_o21yfYI"
-              title="Mount Calvary COGIC Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+        <div className="mt-16 grid max-w-2xl grid-cols-3 border-t border-secondary-foreground/30 pt-5 text-[10px] font-semibold uppercase tracking-[0.24em] text-secondary-foreground/70 md:text-xs">
+          <span>A people</span><span className="text-center">A purpose</span><span className="text-right">A greater tomorrow</span>
         </div>
       </div>
     </section>;
