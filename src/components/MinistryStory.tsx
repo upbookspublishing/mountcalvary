@@ -9,8 +9,8 @@ const values = [
 
 const MinistryStory = () => (
   <section id="leadership" className="overflow-hidden bg-card">
-    <div className="mx-auto grid min-h-[720px] max-w-[1440px] lg:grid-cols-[0.95fr_1.05fr]">
-      <div className="relative flex min-h-[460px] items-end overflow-hidden bg-secondary px-8 py-12 text-secondary-foreground md:px-14 lg:min-h-full">
+    <div className="mx-auto grid min-w-0 min-h-[720px] max-w-[1440px] lg:grid-cols-[0.95fr_1.05fr]">
+      <div className="relative flex min-w-0 min-h-[460px] items-end overflow-hidden bg-secondary px-6 py-12 text-secondary-foreground md:px-14 lg:min-h-full">
         <div className="absolute inset-0 leadership-pattern opacity-70" aria-hidden="true" />
         <div className="relative max-w-lg">
           <div className="flex h-16 w-16 items-center justify-center border border-primary text-3xl text-primary" aria-hidden="true">✝</div>
@@ -20,8 +20,8 @@ const MinistryStory = () => (
         </div>
       </div>
 
-      <div className="flex items-center px-5 py-20 md:px-12 lg:px-20">
-        <div className="max-w-2xl">
+      <div className="flex min-w-0 items-center px-5 py-20 md:px-12 lg:px-20">
+        <div className="min-w-0 max-w-2xl">
           <p className="eyebrow">A lasting legacy</p>
           <h2 className="mt-4 font-display text-5xl font-bold uppercase leading-[0.95] text-foreground md:text-7xl">A House for the Next Generation</h2>
           <div className="mt-7 h-px w-20 bg-primary" />

@@ -9,15 +9,15 @@ const benefits = [
 
 const Partnership = () => (
   <>
-    <section id="partner-meaning" className="bg-secondary py-20 text-secondary-foreground md:py-28">
-      <div className="mx-auto grid max-w-[1200px] gap-12 px-5 lg:grid-cols-2 lg:items-center lg:px-8">
-        <div>
+    <section id="partner-meaning" className="overflow-hidden bg-secondary py-20 text-secondary-foreground md:py-28">
+      <div className="mx-auto grid min-w-0 max-w-[1200px] gap-12 px-5 lg:grid-cols-2 lg:items-center lg:px-8">
+        <div className="min-w-0">
           <p className="eyebrow">A lasting Kingdom legacy</p>
           <h2 className="mt-4 font-display text-5xl font-bold uppercase leading-[0.95] md:text-7xl">Your Partnership Is Part of the Miracle.</h2>
           <p className="mt-7 max-w-xl text-lg leading-8 text-secondary-foreground/70">Founding Partners are people who believe in the vision God has given Mount Calvary and choose to invest in the future of the church, our city, and the generations to come.</p>
           <Button asChild size="lg" className="mt-8 uppercase"><a href="#founding-partners">I Want to Be a Founding Partner <ArrowRight /></a></Button>
         </div>
-        <div className="border-y border-primary/35">
+        <div className="min-w-0 border-y border-primary/35">
           {benefits.map((benefit, index) => (
             <div key={benefit} className="flex gap-5 border-b border-secondary-foreground/15 py-7 last:border-b-0">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center border border-primary text-primary"><Check className="h-4 w-4" /></span>
