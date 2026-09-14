@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import leadersAsset from "@/assets/pastoral-leaders-wide.png.asset.json";
+import leadersUrl from "@/assets/leaders.png";
 
 const values = [
   ["Worship", "A place to encounter God."],
@@ -12,7 +12,7 @@ const MinistryStory = () => (
   <section id="leadership" className="overflow-hidden bg-card">
     <div className="mx-auto grid min-w-0 min-h-[720px] max-w-[1440px] lg:grid-cols-[0.95fr_1.05fr]">
       <div className="relative min-h-[440px] min-w-0 overflow-hidden bg-secondary sm:min-h-[520px] lg:min-h-full">
-        <img src={leadersAsset.url} alt="Bishop Eneas Francisco and Missionary Evangelist Vand Pires" width={620} height={482} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-[center_18%] lg:object-center" />
+        <img src={leadersUrl} alt="Bishop Eneas Francisco and Missionary Evangelist Vand Pires" width={620} height={482} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-[center_18%] lg:object-center" />
         <div className="absolute inset-x-0 bottom-0 bg-leadership-overlay px-6 pb-7 pt-28 text-secondary-foreground md:px-10">
           <p className="font-display text-2xl">Bishop Eneas Francisco &amp; Missionary Evangelist Vand Pires</p>
           <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary">Pastoral Leadership</p>

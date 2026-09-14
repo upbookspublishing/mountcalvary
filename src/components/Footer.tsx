@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/mount-calvary-logo.png.asset.json";
+import logoUrl from "@/assets/logo.png";
 
 const Footer = () => (
   <footer id="contact" className="border-t border-primary/25 bg-secondary py-14 text-secondary-foreground">
@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center bg-card p-1"><img src={logoAsset.url} alt="Mount Calvary COGIC logo" width={40} height={40} className="h-full w-full object-contain" /></div>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center bg-card p-1"><img src={logoUrl} alt="Mount Calvary COGIC logo" width={40} height={40} className="h-full w-full object-contain" /></div>
             <div><p className="font-display text-xl">Mount Calvary Church of God in Christ</p><p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-secondary-foreground/60">São Paulo, Brazil — First Jurisdiction</p></div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-6 text-secondary-foreground/65">Building a place where lives are transformed, leaders are equipped, and generations are reached.</p>
