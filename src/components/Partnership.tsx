@@ -162,7 +162,7 @@ const Partnership = () => {
               <p className="mt-5 text-sm font-semibold uppercase tracking-[0.16em] text-foreground">PayPal</p>
               <a href={`mailto:${DONATION_EMAIL}`} className="mt-2 inline-block text-sm text-muted-foreground underline underline-offset-4 transition hover:text-primary">{DONATION_EMAIL}</a>
               <Button asChild size="lg" className="mt-6 w-full uppercase">
-                <a href={`https://www.paypal.com/paypalme/`} target="_blank" rel="noopener noreferrer">Donate via PayPal <ArrowRight /></a>
+                <a href="https://www.paypal.com/myaccount/transfer/send" target="_blank" rel="noopener noreferrer">Donate via PayPal <ArrowRight /></a>
               </Button>
             </div>
           </div>
