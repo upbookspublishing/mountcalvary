@@ -89,16 +89,17 @@ const Partnership = () => {
         </div>
       </section>
 
-      <section id="founding-partners" className="bg-card py-20 md:py-28">
+      <section className="bg-card py-20 md:py-28">
         <div className="mx-auto grid max-w-[1100px] gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-          <div>
+          <div className="order-2 lg:order-1">
             <p className="eyebrow">Founding Partners</p>
             <h2 className="mt-4 font-display text-5xl font-bold uppercase leading-[0.95] text-foreground md:text-6xl">Take Your Next Step.</h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">Share your details and our team will personally reach out with the next steps for partnering with Mount Calvary International.</p>
             <p className="mt-7 border-l border-primary pl-5 text-sm font-semibold uppercase tracking-[0.16em] text-foreground">Pray. Give. Partner.</p>
           </div>
 
-          <div>
+          <div id="founding-partners" className="order-1 scroll-mt-28 lg:order-2">
+
             <form
               name="founding-partners"
               method="POST"
