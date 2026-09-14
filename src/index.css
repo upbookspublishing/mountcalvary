@@ -58,7 +58,7 @@
     --gradient-gold: linear-gradient(135deg, hsl(41 57% 58%), hsl(41 57% 44%));
     --gradient-dark: linear-gradient(180deg, hsl(209 76% 11%), hsl(209 76% 7%));
     --gradient-card: linear-gradient(145deg, hsl(209 76% 14%), hsl(209 76% 8%));
-    --hero-overlay: linear-gradient(90deg, hsl(219 78% 10% / .96) 0%, hsl(219 78% 10% / .78) 42%, hsl(219 78% 10% / .22) 76%), linear-gradient(0deg, hsl(219 78% 8% / .72), transparent 58%);
+    --hero-overlay: linear-gradient(90deg, hsl(219 78% 10% / .97) 0%, hsl(219 78% 10% / .86) 36%, hsl(219 78% 10% / .34) 68%, hsl(219 78% 10% / .08) 100%), linear-gradient(0deg, hsl(219 78% 8% / .78) 0%, transparent 48%);
     --shadow-gold: 0 4px 30px hsl(42 87% 55% / 0.15);
     --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
     --chart-1: 198 93% 59%;
@@ -157,6 +157,10 @@
 
   .font-body {
     font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  }
+
+  .font-script {
+    font-family: 'Brush Script MT', 'Segoe Script', cursive;
   }
 
   .eyebrow {
