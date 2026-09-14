@@ -1,4 +1,5 @@
-- [ ] Recreate the homepage in the attached navy-and-gold editorial campaign direction.
-- [ ] Add a dedicated welcome video section directly below the hero.
-- [ ] Preserve the existing book and magazine cover content.
-- [ ] Verify desktop and mobile rendering and resolve any errors.
+- [x] Recreate the homepage in the attached navy-and-gold editorial campaign direction.
+- [x] Add a dedicated welcome video section directly below the hero.
+- [x] Build the leadership, fundraising, partnership, scripture, and closing campaign sections.
+- [x] Verify desktop and mobile rendering and resolve any errors.
+- [ ] Replace the prepared logo and pastoral portrait positions when separate official files are provided.

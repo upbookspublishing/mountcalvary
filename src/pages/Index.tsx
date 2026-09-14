@@ -2,8 +2,9 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WelcomeVideo from "@/components/WelcomeVideo";
 import MinistryStory from "@/components/MinistryStory";
-import Books from "@/components/Books";
-import Magazine from "@/components/Magazine";
+import Campaign from "@/components/Campaign";
+import Partnership from "@/components/Partnership";
+import ScriptureCTA from "@/components/ScriptureCTA";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,8 +15,9 @@ const Index = () => {
         <Hero />
         <WelcomeVideo />
         <MinistryStory />
-        <Books />
-        <Magazine />
+        <Campaign />
+        <Partnership />
+        <ScriptureCTA />
       </main>
       <Footer />
     </div>
