@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import leadersAsset from "@/assets/pastoral-leaders.jpeg.asset.json";
 
 const values = [
   ["Worship", "A place to encounter God."],
@@ -10,13 +11,11 @@ const values = [
 const MinistryStory = () => (
   <section id="leadership" className="overflow-hidden bg-card">
     <div className="mx-auto grid min-w-0 min-h-[720px] max-w-[1440px] lg:grid-cols-[0.95fr_1.05fr]">
-      <div className="relative flex min-w-0 min-h-[460px] items-end overflow-hidden bg-secondary px-6 py-12 text-secondary-foreground md:px-14 lg:min-h-full">
-        <div className="absolute inset-0 leadership-pattern opacity-70" aria-hidden="true" />
-        <div className="relative max-w-lg">
-          <div className="flex h-16 w-16 items-center justify-center border border-primary text-3xl text-primary" aria-hidden="true">✝</div>
-          <p className="mt-8 font-display text-3xl leading-tight">Official pastoral portrait</p>
-          <p className="mt-3 max-w-sm text-sm leading-6 text-secondary-foreground/65">Bishop Eneas Francisco &amp; Missionary Evangelist Vand Pires</p>
-          <p className="mt-7 border-l border-primary pl-4 text-xs uppercase tracking-[0.2em] text-primary">Portrait ready for the official uploaded photograph</p>
+      <div className="relative min-h-[560px] min-w-0 overflow-hidden bg-secondary lg:min-h-full">
+        <img src={leadersAsset.url} alt="Bishop Eneas Francisco and Missionary Evangelist Vand Pires" width={768} height={1156} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top" />
+        <div className="absolute inset-x-0 bottom-0 bg-leadership-overlay px-6 pb-7 pt-28 text-secondary-foreground md:px-10">
+          <p className="font-display text-2xl">Bishop Eneas Francisco &amp; Missionary Evangelist Vand Pires</p>
+          <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary">Pastoral Leadership</p>
         </div>
       </div>
 
