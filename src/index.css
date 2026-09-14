@@ -2,42 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Faith-inspired Design System - Warm, elegant, and inviting */
+/* Mount Calvary COGIC — premium campaign design system */
 
 @layer base {
   :root {
-    --background: 43 31% 94%;
-    --foreground: 209 76% 11%;
+    --background: 40 36% 95%;
+    --foreground: 219 78% 13%;
 
     /* Cards with subtle warmth */
     --card: 0 0% 100%;
-    --card-foreground: 209 76% 11%;
+    --card-foreground: 219 78% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 209 76% 11%;
+    --popover-foreground: 219 78% 13%;
 
     /* Primary: Warm gold/amber - represents faith, hope, warmth */
-    --primary: 41 57% 51%;
-    --primary-foreground: 209 76% 11%;
+    --primary: 42 57% 59%;
+    --primary-foreground: 219 78% 13%;
 
     /* Secondary: Soft warm gray */
-    --secondary: 209 76% 11%;
-    --secondary-foreground: 43 31% 94%;
+    --secondary: 219 78% 13%;
+    --secondary-foreground: 40 36% 95%;
 
     /* Muted tones */
-    --muted: 41 18% 84%;
-    --muted-foreground: 209 22% 34%;
+    --muted: 40 16% 86%;
+    --muted-foreground: 213 14% 29%;
 
     /* Accent: Soft sage/olive for organic feel */
     --accent: 40 27% 91%;
-    --accent-foreground: 209 76% 11%;
+    --accent-foreground: 219 78% 13%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
-    --border: 40 18% 78%;
-    --input: 40 18% 78%;
-    --ring: 41 57% 51%;
+    --border: 39 18% 78%;
+    --input: 39 18% 78%;
+    --ring: 42 57% 59%;
 
     --radius: 0.25rem;
 
@@ -58,7 +58,7 @@
     --gradient-gold: linear-gradient(135deg, hsl(41 57% 58%), hsl(41 57% 44%));
     --gradient-dark: linear-gradient(180deg, hsl(209 76% 11%), hsl(209 76% 7%));
     --gradient-card: linear-gradient(145deg, hsl(209 76% 14%), hsl(209 76% 8%));
-    --hero-overlay: linear-gradient(90deg, hsl(209 76% 8% / .94) 0%, hsl(209 76% 8% / .72) 42%, hsl(209 76% 8% / .16) 76%), linear-gradient(0deg, hsl(209 76% 8% / .55), transparent 55%);
+    --hero-overlay: linear-gradient(90deg, hsl(219 78% 10% / .96) 0%, hsl(219 78% 10% / .78) 42%, hsl(219 78% 10% / .22) 76%), linear-gradient(0deg, hsl(219 78% 8% / .72), transparent 58%);
     --shadow-gold: 0 4px 30px hsl(42 87% 55% / 0.15);
     --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
     --chart-1: 198 93% 59%;
@@ -161,11 +161,22 @@
 
   .eyebrow {
     @apply text-xs font-semibold uppercase text-primary;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.24em;
   }
 
   .bg-hero-overlay {
     background: var(--hero-overlay);
+  }
+
+  .leadership-pattern {
+    background-image: linear-gradient(135deg, transparent 0 48%, hsl(var(--primary) / 0.12) 48% 49%, transparent 49% 100%);
+    background-size: 28px 28px;
+  }
+
+  .final-cta-bg {
+    background-image: linear-gradient(180deg, hsl(var(--secondary) / 0.92), hsl(var(--secondary))), url('/src/assets/sao-paulo-cross.jpg');
+    background-position: center;
+    background-size: cover;
   }
 }
 

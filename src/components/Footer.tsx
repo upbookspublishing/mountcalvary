@@ -1,66 +1,33 @@
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Footer = () => {
-  return (
-    <footer className="border-t border-primary/20 bg-secondary py-16 text-secondary-foreground">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 max-w-6xl mx-auto">
-          {/* Brand */}
-          <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center border border-primary">
-                  <span className="font-display text-lg text-primary">✝</span>
-              </div>
-              <span className="font-display text-xl">Mount Calvary COGIC</span>
-            </div>
-            <p className="text-background/70 max-w-md leading-relaxed">
-              Serving São Paulo, equipping believers, and sharing the Gospel across generations.
-            </p>
+const Footer = () => (
+  <footer id="contact" className="border-t border-primary/25 bg-secondary py-14 text-secondary-foreground">
+    <div className="mx-auto max-w-[1280px] px-5 lg:px-8">
+      <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+        <div>
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center border border-primary text-2xl text-primary" aria-hidden="true">✝</div>
+            <div><p className="font-display text-xl">Mount Calvary Church of God in Christ</p><p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-secondary-foreground/60">São Paulo, Brazil — First Jurisdiction</p></div>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-display font-semibold text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-3">
-              {["Welcome", "Our Books", "Magazine"].map((link) => (
-                <li key={link}>
-                   <a href={`#${link === "Our Books" ? "books" : link.toLowerCase()}`} className="text-secondary-foreground/70 transition-colors hover:text-primary">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-display font-semibold text-lg mb-4">Stay Connected</h4>
-            <p className="text-background/70 text-sm mb-4">
-              Get weekly inspiration delivered to your inbox.
-            </p>
-            <form className="space-y-3">
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="w-full px-4 py-3 rounded-lg bg-background/10 border border-background/20 text-background placeholder:text-background/50 focus:outline-none focus:border-primary"
-              />
-              <Button 
-                type="submit"
-                 className="w-full"
-              >
-                Subscribe
-               </Button>
-            </form>
-          </div>
+          <p className="mt-5 max-w-md text-sm leading-6 text-secondary-foreground/65">Building a place where lives are transformed, leaders are equipped, and generations are reached.</p>
         </div>
-
-        {/* Bottom */}
-        <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/60 text-sm">
-          <p>© 2026 Mount Calvary COGIC Brazil. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Explore</p>
+          <div className="mt-4 grid gap-3 text-sm text-secondary-foreground/70">
+            <a href="#our-story" className="hover:text-primary">Our Story</a><a href="#the-miracle" className="hover:text-primary">The Miracle</a><a href="#founding-partners" className="hover:text-primary">Founding Partners</a>
+          </div>
+        </nav>
+        <div>
+          <Button asChild className="w-full uppercase"><a href="#founding-partners">Be a Founding Partner</a></Button>
+          <div className="mt-5 flex gap-3">
+            {[Facebook, Instagram, Youtube].map((Icon, index) => <a key={index} href="#contact" aria-label={["Facebook", "Instagram", "YouTube"][index]} className="flex h-9 w-9 items-center justify-center border border-secondary-foreground/25 text-secondary-foreground/65 transition hover:border-primary hover:text-primary"><Icon className="h-4 w-4" /></a>)}
+          </div>
         </div>
       </div>
-    </footer>
-  );
-};
+      <div className="mt-12 flex flex-col gap-3 border-t border-secondary-foreground/15 pt-6 text-xs text-secondary-foreground/50 sm:flex-row sm:justify-between"><p>© 2026 Mount Calvary COGIC. All rights reserved.</p><p>A Miracle in Motion</p></div>
+    </div>
+  </footer>
+);
 
 export default Footer;
