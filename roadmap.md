@@ -2,4 +2,5 @@
 - [x] Add a dedicated welcome video section directly below the hero.
 - [x] Build the leadership, fundraising, partnership, scripture, and closing campaign sections.
 - [x] Verify desktop and mobile rendering and resolve any errors.
-- [ ] Replace the prepared logo and pastoral portrait positions when separate official files are provided.
+- [x] Replace the prepared logo and pastoral portrait positions with the official files.
+- [x] Replace the hero background with the supplied Mount Calvary building photograph.

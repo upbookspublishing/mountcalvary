@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoAsset from "@/assets/mount-calvary-logo.png.asset.json";
 
 const links = [
   ["Home", "#home"],
@@ -17,8 +18,8 @@ const Header = () => {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-primary/25 bg-secondary/95 text-secondary-foreground shadow-sm backdrop-blur-md">
       <div className="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 lg:px-8">
         <a href="#home" className="flex min-w-0 items-center gap-3" aria-label="Mount Calvary COGIC home">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-primary text-primary" aria-hidden="true">
-            <span className="font-display text-2xl">✝</span>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center bg-card p-1">
+            <img src={logoAsset.url} alt="Mount Calvary COGIC logo" width={40} height={40} className="h-full w-full object-contain" />
           </div>
           <span className="min-w-0 font-display text-base leading-tight sm:text-lg">
             Mount Calvary COGIC

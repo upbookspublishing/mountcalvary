@@ -168,9 +168,8 @@
     background: var(--hero-overlay);
   }
 
-  .leadership-pattern {
-    background-image: linear-gradient(135deg, transparent 0 48%, hsl(var(--primary) / 0.12) 48% 49%, transparent 49% 100%);
-    background-size: 28px 28px;
+  .bg-leadership-overlay {
+    background: linear-gradient(0deg, hsl(var(--secondary) / 0.96), hsl(var(--secondary) / 0));
   }
 
   .final-cta-bg {
