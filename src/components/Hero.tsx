@@ -1,10 +1,10 @@
 import { ArrowRight, PlayCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import buildingAsset from "@/assets/mount-calvary-building.png.asset.json";
+import buildingAsset from "@/assets/mount-calvary-hero-building.png.asset.json";
 
 const Hero = () => (
   <section id="home" className="relative flex min-h-[760px] items-end overflow-hidden bg-secondary pt-[84px] text-secondary-foreground lg:h-[clamp(625px,43.9vw,760px)] lg:min-h-[625px] lg:pt-[116px]">
-    <img src={buildingAsset.url} alt="Mount Calvary church building in São Paulo" width={727} height={420} className="absolute inset-0 h-full w-full object-cover object-[58%_center] lg:object-center" />
+    <img src={buildingAsset.url} alt="Mount Calvary church building in São Paulo" width={1754} height={768} className="absolute inset-0 h-full w-full object-cover object-center" />
     <div className="absolute inset-0 bg-hero-overlay" />
 
     <div className="relative z-10 mx-auto flex h-full w-full max-w-[1365px] flex-col px-5 pb-8 pt-10 lg:px-[52px] lg:pb-[54px] lg:pt-[48px]">
