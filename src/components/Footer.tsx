@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const Footer = () => {
   return (
     <footer className="border-t border-primary/20 bg-secondary py-16 text-secondary-foreground">
