@@ -4,7 +4,7 @@ import heroImage from "@/assets/mount-calvary-hero.jpg";
 
 const Hero = () => (
   <section id="home" className="relative flex min-h-[760px] items-end overflow-hidden bg-secondary pt-[76px] text-secondary-foreground lg:min-h-[880px]">
-    <img src={heroImage} alt="Mount Calvary church building in São Paulo" width={1920} height={1088} fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-[64%_center]" />
+    <img src={heroImage} alt="Mount Calvary church building in São Paulo" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover object-[64%_center]" />
     <div className="absolute inset-0 bg-hero-overlay" />
 
     <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 pb-10 pt-28 lg:px-8 lg:pb-12">
