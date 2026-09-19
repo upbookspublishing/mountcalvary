@@ -8,7 +8,7 @@ const WelcomeVideo = () => (
         <div className="aspect-video overflow-hidden bg-secondary">
           <iframe
             className="h-full w-full"
-            src="https://www.youtube.com/embed/Bri1oHCOJ3U"
+            src="https://www.youtube.com/embed/HsdcqlBABCU"
             title="Welcome to Mount Calvary COGIC"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
