@@ -32,7 +32,7 @@ const Header = () => {
 
         <nav className="hidden items-center gap-8 xl:flex" aria-label="Main navigation">
           {links.map(([label, href]) => (
-            <a key={href} href={href} className={`border-b-2 py-2 text-xs font-medium transition-colors hover:text-primary ${href === "#home" ? "border-primary text-primary" : "border-transparent text-secondary-foreground/90"}`}>
+            <a key={href} href={href} className={`border-b-2 py-2 text-sm font-semibold uppercase tracking-wide transition-colors hover:text-primary ${href === "#home" ? "border-primary text-primary" : "border-transparent text-secondary-foreground/90"}`}>
               {label}
             </a>
           ))}
