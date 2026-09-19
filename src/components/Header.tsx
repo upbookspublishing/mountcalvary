@@ -57,7 +57,7 @@ const Header = () => {
         <div className="border-t border-secondary-foreground/10 bg-secondary px-5 py-5 xl:hidden">
           <nav className="mx-auto flex max-w-[1440px] flex-col" aria-label="Mobile navigation">
             {links.map(([label, href]) => (
-              <a key={href} href={href} onClick={() => setIsOpen(false)} className="border-b border-secondary-foreground/10 py-3 text-sm text-secondary-foreground/85">
+              <a key={href} href={href} onClick={() => setIsOpen(false)} className="border-b border-secondary-foreground/10 py-3.5 text-base font-semibold uppercase tracking-wide text-secondary-foreground/85">
                 {label}
               </a>
             ))}
