@@ -32,7 +32,7 @@ const Campaign = () => (
         <div className="mt-5 h-4 overflow-hidden bg-muted" role="progressbar" aria-label="Campaign fundraising progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={campaign.percentage}>
           <div className="h-full bg-primary transition-all duration-700" style={{ width: `${campaign.percentage}%` }} />
         </div>
-        <p className="mt-3 text-right text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">[Editable Percentage]% Complete</p>
+        <p className="mt-3 text-right text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">{campaign.percentage}% Complete</p>
 
         <div className="mt-9 grid gap-px bg-border md:grid-cols-3">
           {pillars.map(({ icon: Icon, title, text }) => (
