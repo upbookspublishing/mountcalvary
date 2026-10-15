@@ -2,9 +2,9 @@ import { ArrowRight, BookOpen, Church, Globe2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const campaign = {
-  goal: "U$ 80,000",
-  raised: "[Editable Amount]",
-  percentage: 0,
+  goal: "U$ 128,000",
+  raised: "U$ 39,600",
+  percentage: 31,
 };
 
 const pillars = [
@@ -27,12 +27,12 @@ const Campaign = () => (
       <div className="mt-12 border border-border bg-card p-6 shadow-xl md:p-9">
         <div className="flex flex-col gap-3 text-sm font-semibold uppercase text-foreground sm:flex-row sm:justify-between">
           <span>Raised: <span className="text-primary">{campaign.raised}</span></span>
-          <span>Goal: <span className="text-primary">{campaign.goal}</span></span>
+          <span>Yearly Goal: <span className="text-primary">{campaign.goal}</span></span>
         </div>
         <div className="mt-5 h-4 overflow-hidden bg-muted" role="progressbar" aria-label="Campaign fundraising progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={campaign.percentage}>
           <div className="h-full bg-primary transition-all duration-700" style={{ width: `${campaign.percentage}%` }} />
         </div>
-        <p className="mt-3 text-right text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">[Editable Percentage]% Complete</p>
+        <p className="mt-3 text-right text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">{campaign.percentage}% Complete</p>
 
         <div className="mt-9 grid gap-px bg-border md:grid-cols-3">
           {pillars.map(({ icon: Icon, title, text }) => (
